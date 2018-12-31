@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.projectName {
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: hsl(220, 27%, 22%);
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: slideInFromTop 400ms ease 400ms forwards;
+}
+
+.title {
+  font-size: 32px;
+  margin: 32px 0 24px 0;
+  color: hsl(228, 21%, 31%);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(228, 14%, 58%);
+  margin-bottom: 16px;
+}
+
+.overviewContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.5em;
+  width: 80%;
+  color: hsl(201, 23%, 34%);
+}
+
+.projectImagesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.stackContainer {
+  display: flex;
+}
+
+.technologyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 8px;
+}
+
+.homeLink {
+  font-size: 24px;
+  color: hsla(0, 0%, 0%, 1);
+  font-weight: 600;
+  background: linear-gradient(
+    to top,
+    rgba(255, 215, 0, 0.4) 35%,
+    transparent 35%
+  );
+  text-decoration: none;
+  margin-top: 64px;
+  transition: all 250ms;
+}
+
+.homeLink:hover {
+  background: hsla(51, 100%, 50%, 1);
+}
+
+@media (max-width: 376px) {
+  .projectName {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .projectDetailsDescription {
+    font-size: 18px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

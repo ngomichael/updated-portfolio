@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 88%;
+  margin: 16px auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-top: 24px;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  height: 45px;
+  margin-top: 12px;
+}
+
+.listItem {
+  list-style: none;
+}
+
+.bottomBorder {
+  background-color: hsl(214, 76%, 54%);
+  border-radius: 4px;
+  height: 4px;
+  margin-top: 4px;
+  transition: all 250ms;
+}
+
+.link {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 250ms;
+}
+
+.grayText {
+  color: hsl(228, 14%, 58%);
+}
+
+.blackText {
+  color: hsl(220, 27%, 22%);
+}
+
+.link:hover {
+  cursor: pointer;
+  color: hsl(233, 25%, 12%);
+}
